@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<title>Happy Birthday Utkarsh Dada!</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700;800&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Poppins,Arial,sans-serif;
+  background:#070a10;
+  color:#fff;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:20;
+  background:radial-gradient(circle at 20% 20%,rgba(255,55,35,.12),transparent 30%),
+             radial-gradient(circle at 80% 60%,rgba(0,140,255,.10),transparent 35%);
+}
+.hero{
+  min-height:100vh;position:relative;display:flex;align-items:center;
+  justify-content:center;text-align:center;padding:35px 18px 90px;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(5,7,12,.28),#070a10 92%),
+    radial-gradient(ellipse at 50% 0%,#24334d 0%,#101722 42%,#070a10 75%);
+}
+.stars,.stars:before,.stars:after{
+  content:"";position:absolute;inset:0;background-image:
+  radial-gradient(circle,rgba(255,255,255,.8) 1px,transparent 1.5px);
+  background-size:73px 73px;opacity:.35;
+}
+.stars:before{background-size:113px 113px;opacity:.22;transform:translate(30px,20px)}
+.stars:after{background-size:167px 167px;opacity:.18;transform:translate(-50px,40px)}
+
+.content{position:relative;z-index:5;max-width:850px}
+.badge{
+  display:inline-block;padding:8px 16px;border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;background:rgba(255,255,255,.07);backdrop-filter:blur(8px);
+  font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;
+}
+h1{
+  font-family:"Bebas Neue",Impact,sans-serif;font-size:clamp(72px,18vw,170px);
+  line-height:.78;letter-spacing:3px;text-shadow:0 8px 30px rgba(0,0,0,.45);
+}
+.red{color:#ff3b30}
+.sub{
+  margin:18px auto 28px;font-size:clamp(16px,3.8vw,23px);font-weight:600;
+  color:#d8deea;max-width:680px;
+}
+.photo-wrap{
+  width:min(270px,72vw);aspect-ratio:1/1;margin:0 auto 25px;padding:8px;
+  border-radius:50%;background:linear-gradient(135deg,#ff3b30,#ffb000,#343c4c);
+  box-shadow:0 0 55px rgba(255,59,48,.25);
+  animation:float 4s ease-in-out infinite;
+}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+@keyframes float{50%{transform:translateY(-10px) rotate(1deg)}}
+
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;
+  background:#ff3b30;color:white;border:0;font-weight:800;cursor:pointer;
+  box-shadow:0 8px 25px rgba(255,59,48,.3);transition:.2s;
+}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.scroll{margin-top:28px;font-size:12px;color:#8993a6;letter-spacing:2px}
+
+.road{
+  position:absolute;left:-10%;right:-10%;bottom:-2px;height:145px;
+  background:#10141c;transform:perspective(300px) rotateX(55deg);transform-origin:bottom;
+  border-top:2px solid #343a45;opacity:.9;
+}
+.road:after{
+  content:"";position:absolute;left:50%;top:0;width:18px;height:100%;
+  transform:translateX(-50%);
+  background:repeating-linear-gradient(to bottom,#f6c94a 0 35px,transparent 35px 72px);
+}
+.car{
+  position:absolute;z-index:2;bottom:40px;left:-180px;width:145px;height:55px;
+  animation:drive 8s linear infinite;
+}
+.car .body{
+  position:absolute;bottom:10px;width:145px;height:35px;border-radius:12px 28px 9px 9px;
+  background:linear-gradient(180deg,#e94135,#7d1413);box-shadow:0 8px 20px rgba(255,0,0,.22);
+}
+.car .roof{
+  position:absolute;left:35px;bottom:40px;width:70px;height:30px;
+  border-radius:45px 45px 4px 4px;background:#b72220;
+  clip-path:polygon(12% 100%,28% 0,72% 0,88% 100%);
+}
+.car .window{
+  position:absolute;left:47px;bottom:44px;width:45px;height:18px;
+  background:#16202c;clip-path:polygon(15% 100%,28% 0,68% 0,85% 100%);
+}
+.wheel{
+  position:absolute;bottom:0;width:28px;height:28px;border-radius:50%;background:#050609;border:6px solid #303642
+}
+.w1{left:18px}.w2{right:18px}
+@keyframes drive{from{transform:translateX(-20vw)}to{transform:translateX(125vw)}}
+
+.section{padding:80px 18px;position:relative}
+.section-inner{max-width:1050px;margin:auto}
+.kicker{color:#ff564c;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800}
+h2{font-family:"Bebas Neue";font-size:clamp(48px,10vw,82px);line-height:.9;margin:8px 0 35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  padding:25px;border:1px solid #252b37;border-radius:22px;background:linear-gradient(145deg,#121720,#0c1017);
+  box-shadow:0 15px 40px rgba(0,0,0,.18);min-height:180px;
+}
+.icon{font-size:40px;margin-bottom:12px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{font-size:14px;color:#aeb6c5;line-height:1.65}
+
+.garage{
+  background:linear-gradient(180deg,#070a10,#0d121a 50%,#070a10);
+}
+.garage-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.machine{
+  min-height:250px;border-radius:25px;padding:28px;position:relative;overflow:hidden;
+  border:1px solid #2a303b;background:#11161f;
+}
+.machine:after{
+  content:"";position:absolute;width:240px;height:240px;border-radius:50%;
+  right:-80px;bottom:-120px;background:rgba(255,59,48,.12);
+}
+.machine.bike:after{background:rgba(210,170,75,.12)}
+.machine h3{font-family:"Bebas Neue";font-size:45px;letter-spacing:1px}
+.machine p{color:#aeb6c5;max-width:400px;margin-top:8px;line-height:1.6}
+.machine .line{
+  margin-top:28px;width:100%;height:5px;border-radius:5px;
+  background:linear-gradient(90deg,#ff3b30,transparent);
+}
+.bike .line{background:linear-gradient(90deg,#c6a25b,transparent)}
+
+.message{
+  text-align:center;padding:90px 18px 110px;
+  background:radial-gradient(circle at center,#1c1b1a,#070a10 60%);
+}
+.message-box{
+  max-width:760px;margin:auto;padding:34px 25px;border:1px solid #2c313a;
+  border-radius:28px;background:rgba(255,255,255,.035);backdrop-filter:blur(8px);
+}
+.message-box p{font-size:clamp(18px,4vw,26px);line-height:1.75;color:#e3e7ef}
+.signature{margin-top:22px;color:#ff635a;font-weight:800}
+
+.footer{text-align:center;color:#697386;padding:25px 15px;font-size:12px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.conf{position:absolute;width:9px;height:14px;top:-20px;animation:fall 3.4s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+
+@media(max-width:720px){
+  .grid,.garage-grid{grid-template-columns:1fr}
+  .section{padding:65px 16px}
+  .road{height:110px}
+  .car{transform:scale(.8);animation-duration:6s}
+}
+</style>
+</head>
+<body>
+
+<div id="confetti"></div>
+
+<section class="hero">
+  <div class="stars"></div>
+  <div class="content">
+    <div class="badge">🏁 SPECIAL EDITION • BIRTHDAY 2026</div>
+    <div class="photo-wrap">
+      <img src="utkarsh.jpg" alt="Utkarsh Dada">
+    </div>
+    <h1>HAPPY<br><span class="red">BIRTHDAY</span><br>UTKARSH!</h1>
+    <p class="sub">To the Dada who deserves a garage full of supercars, a Royal Enfield and unlimited cake.</p>
+    <button class="btn" onclick="celebrate()">🔥 START THE ENGINE</button>
+    <div class="scroll">SCROLL DOWN ↓</div>
+  </div>
+
+  <div class="car">
+    <div class="roof"></div><div class="window"></div><div class="body"></div>
+    <div class="wheel w1"></div><div class="wheel w2"></div>
+  </div>
+  <div class="road"></div>
+</section>
+
+
+
+
+
+<section class="message">
+  <div class="message-box">
+    <div class="kicker">A Message For Dada</div>
+    <h2>KEEP RIDING.<br>KEEP SMILING.</h2>
+    <p>
+      Happy Birthday, Utkarsh Dada!<br>
+      May your year be faster than a sports car,
+      smoother than a perfect ride,
+      and packed with memories worth replaying.
+    </p>
+    <div class="signature">— With lots of birthday love & cake 🎂</div>
+    <br>
+    <button class="btn" onclick="celebrate()">🎉 CELEBRATE AGAIN</button>
+  </div>
+</section>
+
+<div class="footer">Made specially for Utkarsh Dada • Birthday Edition</div>
+
+<script>
+function celebrate(){
+  const box=document.getElementById("confetti");
+  box.innerHTML="";
+  const symbols=["🎉","🎂","🏎️","🏍️","⭐","🔥","🥳"];
+  for(let i=0;i<80;i++){
+    const el=document.createElement("div");
+    el.className="conf";
+    el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    el.style.left=Math.random()*100+"vw";
+    el.style.animationDelay=Math.random()*0.8+"s";
+    el.style.fontSize=(12+Math.random()*18)+"px";
+    box.appendChild(el);
+  }
+  // Tiny "engine start" sound made with Web Audio — no external audio file needed.
+  try{
+    const C=window.AudioContext||window.webkitAudioContext;
+    const ctx=new C(), osc=ctx.createOscillator(), gain=ctx.createGain();
+    osc.type="sawtooth"; osc.frequency.setValueAtTime(90,ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(180,ctx.currentTime+.25);
+    osc.frequency.exponentialRampToValueAtTime(70,ctx.currentTime+.55);
+    gain.gain.setValueAtTime(.0001,ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(.16,ctx.currentTime+.05);
+    gain.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.6);
+    osc.connect(gain).connect(ctx.destination); osc.start(); osc.stop(ctx.currentTime+.62);
+  }catch(e){}
+  setTimeout(()=>box.innerHTML="",4200);
+}
+</script>
+</body>
+</html>
